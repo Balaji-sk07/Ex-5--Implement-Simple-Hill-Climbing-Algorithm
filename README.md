@@ -1,51 +1,35 @@
 <h1>ExpNo 5 : Implement Simple Hill Climbing Algorithm</h1> 
-<h3>Name: BALAJI SK           </h3>
-<h3>Register Number:2305003001             </h3>
-<H3>Aim:</H3>
+<h3>Name: BALAJI SK            </h3>
+<h3>Register Number:    2305003001    </h3>
+<h2> AIM: </h2>
 <p>Implement Simple Hill Climbing Algorithm and Generate a String by Mutating a Single Character at each iteration </p>
-<h2> Theory: </h2>
+<h2> THEORY: </h2>
 <p>Hill climbing is a variant of Generate and test in which feedback from test procedure is used to help the generator decide which direction to move in search space.
 Feedback is provided in terms of heuristic function
 </p>
 
 
-## Algorithm:
-```
-1. Start
+## ALGORITHM:
+ 
+Step 1- Read the target string from the user.
 
+Step 2- Generate a random initial solution of the same length as the target.
 
-2. Input the target string from the user.
+Step 3- Calculate the score (difference) between the current solution and the target.
 
+Step 4- Repeat the following steps until the score becomes zero:
+a. Display the current score and solution.
+b. Mutate one random character in the current solution to create a new solution.
+c. Calculate the score of the new solution.
+d. If the new solution has a lower score, replace the old one.
 
-3. Generate a random string of the same length using printable characters.
+Step 5- When the score becomes zero, stop the process.
 
+Step 6- Print the final solution as the target string.
 
-4. Calculate the score (difference) between the random string and the target string.
-
-
-5. Repeat until the score becomes 0:
-
-Randomly change one character in the string.
-
-Calculate the new score.
-
-If the new score is better (smaller), accept the new string.
-
-
-
-6. When score = 0, the string matches the target.
-
-
-7. Print the final string.
-
-
-8. Stop
-
-
-```
-## PROGRAM
+## PROGRAM:
 ```python
- import random, string
+import random, string
 
 def hill_climb():
     target = input("Enter the target string: ")
@@ -66,296 +50,18 @@ def hill_climb():
 hill_climb()
 ```
 
+<hr>
+<h2>Sample Input and Output</h2>
+<h3>Sample String:</h3> Hello
+<h3>Output:</h3>
+<img width="1234" height="455" alt="image" src="https://github.com/user-attachments/assets/315892ca-7be1-4595-81a3-4b04a340cc2b" />
+.<br>
+.<br>
+.<br>
+<img width="1053" height="662" alt="image" src="https://github.com/user-attachments/assets/2b2e6739-3908-4cab-a758-995268edacaa" />
 
-## Input 
-Enter the target string: Hi
-## Output
-```
-60 K0
-6 Kf
-6 Kf
-6 Kf
-6 Kf
-6 Kf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-4 Gf
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-2 Gj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-1 Hj
-Final: Hi
-```
-## Result:
-Thus, the program is executed sucessfully.
+
+
+## RESULT:
+
+Thus the program to Implement Simple Hill Climbing Algorithm has been executed successfully.
